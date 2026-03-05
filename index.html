@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -9,26 +10,24 @@
 
 <meta name="description" content="Agile Transformation Leader with 20+ years of leadership in Scrum, Enterprise Delivery and Operations Strategy.">
 
+<!-- FAVICON -->
+<link rel="icon" type="image/svg+xml"
+href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%236366f1'/><text x='50' y='60' font-size='44' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>VC</text></svg>">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
-html{
-scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
 font-family:'Inter',sans-serif;
 background:#020617;
 color:white;
 line-height:1.6;
-overflow-x:hidden;
+overflow-x:hidden
 }
 
 /* HERO GLOW */
@@ -42,7 +41,7 @@ filter:blur(180px);
 opacity:.35;
 top:-200px;
 left:-150px;
-z-index:-1;
+z-index:-1
 }
 
 /* HEADER */
@@ -56,7 +55,7 @@ position:sticky;
 top:0;
 background:rgba(0,0,0,0.6);
 backdrop-filter:blur(10px);
-z-index:100;
+z-index:100
 }
 
 nav a{
@@ -64,16 +63,12 @@ color:#cbd5e1;
 margin-left:25px;
 text-decoration:none;
 font-size:14px;
-transition:.3s;
+transition:.3s
 }
 
-nav a:hover{
-color:#818cf8;
-}
+nav a:hover{color:#818cf8}
 
-section{
-padding:100px 70px;
-}
+section{padding:100px 70px}
 
 /* HERO */
 
@@ -81,7 +76,7 @@ padding:100px 70px;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:60px;
-align-items:center;
+align-items:center
 }
 
 .hero h1{
@@ -89,20 +84,20 @@ font-size:58px;
 font-weight:800;
 background:linear-gradient(90deg,#6366f1,#a78bfa);
 -webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+-webkit-text-fill-color:transparent
 }
 
 .hero p{
 margin-top:20px;
 font-size:18px;
 color:#cbd5e1;
-max-width:500px;
+max-width:500px
 }
 
 .hero img{
 width:360px;
 border-radius:26px;
-box-shadow:0 40px 90px rgba(0,0,0,.8);
+box-shadow:0 40px 90px rgba(0,0,0,.8)
 }
 
 /* BUTTON */
@@ -115,18 +110,16 @@ background:#6366f1;
 color:white;
 font-weight:600;
 cursor:pointer;
-margin-top:25px;
+margin-top:25px
 }
 
-button:hover{
-background:#4f46e5;
-}
+button:hover{background:#4f46e5}
 
 /* TITLES */
 
 .section-title{
 font-size:36px;
-margin-bottom:40px;
+margin-bottom:40px
 }
 
 /* GLASS CARDS */
@@ -134,7 +127,7 @@ margin-bottom:40px;
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
+gap:30px
 }
 
 .card{
@@ -142,36 +135,36 @@ background:rgba(255,255,255,.05);
 padding:35px;
 border-radius:20px;
 backdrop-filter:blur(14px);
-transition:.3s;
+transition:.3s
 }
 
 .card:hover{
 transform:translateY(-8px);
-background:rgba(255,255,255,.08);
+background:rgba(255,255,255,.08)
 }
 
 /* TIMELINE */
 
 .timeline{
 border-left:3px solid #6366f1;
-padding-left:30px;
+padding-left:30px
 }
 
 .timeline-item{
 margin-bottom:40px;
 opacity:0;
 transform:translateY(40px);
-transition:.7s;
+transition:.7s
 }
 
 .timeline-item.visible{
 opacity:1;
-transform:translateY(0);
+transform:translateY(0)
 }
 
 .timeline-item h4{
 color:#818cf8;
-margin-bottom:5px;
+margin-bottom:5px
 }
 
 /* STATS */
@@ -179,19 +172,27 @@ margin-bottom:5px;
 .stats{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:25px;
+gap:25px
 }
 
 .stat{
 background:rgba(255,255,255,.05);
 padding:30px;
 border-radius:20px;
-text-align:center;
+text-align:center
 }
 
 .stat h2{
 font-size:42px;
-color:#818cf8;
+color:#818cf8
+}
+
+/* CASE STUDIES */
+
+.cases{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px
 }
 
 /* SOCIAL */
@@ -200,18 +201,16 @@ color:#818cf8;
 display:flex;
 justify-content:center;
 gap:25px;
-margin-top:25px;
+margin-top:25px
 }
 
 .social a{
 color:white;
 text-decoration:none;
-font-size:16px;
+font-size:16px
 }
 
-.social a:hover{
-color:#818cf8;
-}
+.social a:hover{color:#818cf8}
 
 /* FOOTER */
 
@@ -219,7 +218,7 @@ footer{
 text-align:center;
 padding:40px;
 border-top:1px solid #1e293b;
-color:#94a3b8;
+color:#94a3b8
 }
 
 /* MODAL */
@@ -230,7 +229,7 @@ position:fixed;
 inset:0;
 background:rgba(0,0,0,.8);
 align-items:center;
-justify-content:center;
+justify-content:center
 }
 
 .modal-box{
@@ -238,12 +237,10 @@ background:#020617;
 padding:45px;
 border-radius:20px;
 text-align:center;
-max-width:420px;
+max-width:420px
 }
 
-.modal-box a{
-color:#818cf8;
-}
+.modal-box a{color:#818cf8}
 
 /* MOBILE */
 
@@ -251,24 +248,35 @@ color:#818cf8;
 
 .hero{
 grid-template-columns:1fr;
-text-align:center;
+text-align:center
 }
 
-.hero img{
-margin:auto;
-}
+.hero img{margin:auto}
 
-header{
-padding:20px;
-}
+header{padding:20px}
 
-section{
-padding:80px 25px;
-}
+section{padding:80px 25px}
 
 }
 
 </style>
+
+<!-- GOOGLE SEO SCHEMA -->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "Person",
+"name": "Vineet Chopra",
+"jobTitle": "Scrum Master & Agile Transformation Leader",
+"url": "https://vineetagile.github.io/me/",
+"sameAs": [
+"https://www.linkedin.com/in/vineetchopra27/",
+"https://x.com/VineetChop98479"
+]
+}
+</script>
+
 </head>
 
 <body>
@@ -284,6 +292,7 @@ padding:80px 25px;
 <a href="#expertise">Expertise</a>
 <a href="#career">Career</a>
 <a href="#impact">Impact</a>
+<a href="#cases">Case Studies</a>
 <a href="#contact">Contact</a>
 </nav>
 
@@ -319,7 +328,7 @@ and deliver operational excellence with 20+ years of leadership experience.
 <p>
 I believe successful Agile organizations empower teams, embrace transparency,
 and continuously improve. My leadership focuses on building collaborative
-cultures, mentoring leaders and delivering predictable outcomes.
+cultures and delivering predictable outcomes.
 </p>
 
 </div>
@@ -398,23 +407,48 @@ cultures, mentoring leaders and delivering predictable outcomes.
 <div class="stats">
 
 <div class="stat">
-<h2>20+</h2>
+<h2 class="counter" data-target="20">0</h2>
 <p>Years Experience</p>
 </div>
 
 <div class="stat">
-<h2>380+</h2>
+<h2 class="counter" data-target="380">0</h2>
 <p>Largest Team Managed</p>
 </div>
 
 <div class="stat">
-<h2>75K+</h2>
+<h2 class="counter" data-target="75000">0</h2>
 <p>Daily Calls Managed</p>
 </div>
 
 <div class="stat">
-<h2>10+</h2>
+<h2 class="counter" data-target="10">0</h2>
 <p>Years Agile Leadership</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="cases">
+
+<h2 class="section-title">Transformation Case Studies</h2>
+
+<div class="cases">
+
+<div class="card">
+<h3>Agile Adoption</h3>
+<p>Led Agile transformation improving delivery transparency and team productivity.</p>
+</div>
+
+<div class="card">
+<h3>Operational Scale</h3>
+<p>Managed telecom operations handling 75k+ daily calls within SLA.</p>
+</div>
+
+<div class="card">
+<h3>Team Performance</h3>
+<p>Mentored leaders and built high performing teams across large operations.</p>
 </div>
 
 </div>
@@ -444,9 +478,7 @@ Open to Agile leadership, coaching and transformation initiatives.
 </section>
 
 <footer>
-
 © 2026 Vineet Chopra | Agile Transformation Leadership
-
 </footer>
 
 <div id="modal" class="modal">
@@ -472,25 +504,44 @@ Open to Agile leadership, coaching and transformation initiatives.
 <script>
 
 function openModal(){
-document.getElementById("modal").style.display="flex";
+document.getElementById("modal").style.display="flex"
 }
 
 function closeModal(){
-document.getElementById("modal").style.display="none";
+document.getElementById("modal").style.display="none"
 }
+
+/* COUNTER ANIMATION */
+
+const counters=document.querySelectorAll('.counter')
+
+counters.forEach(counter=>{
+const update=()=>{
+const target=+counter.getAttribute('data-target')
+const c=+counter.innerText
+const inc=target/100
+if(c<target){
+counter.innerText=Math.ceil(c+inc)
+setTimeout(update,20)
+}else{
+counter.innerText=target
+}
+}
+update()
+})
 
 /* TIMELINE ANIMATION */
 
-const items=document.querySelectorAll(".timeline-item");
+const items=document.querySelectorAll(".timeline-item")
 
 window.addEventListener("scroll",()=>{
 items.forEach(el=>{
-const top=el.getBoundingClientRect().top;
+const top=el.getBoundingClientRect().top
 if(top<window.innerHeight-80){
-el.classList.add("visible");
+el.classList.add("visible")
 }
-});
-});
+})
+})
 
 </script>
 
