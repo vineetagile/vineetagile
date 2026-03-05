@@ -1,274 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vineet Chopra | Scrum Leader & Agile Transformation Leader</title>
-  <meta name="description" content="20+ years experience in Agile Leadership, Scrum Mastery, Operations Management, and Large-Scale Team Delivery." />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vineet Chopra | Agile Transformation Leader</title>
+<meta name="description" content="20+ years experience in Agile Leadership, Scrum Mastery, Operations Management, and Large-Scale Team Delivery." />
 
-  <!-- FAVICON (VC) -->
-  <link rel="icon" type="image/svg+xml" 
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50' y='58' font-size='45' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>VC</text></svg>" />
+<!-- VC Favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%236366f1'/><text x='50' y='60' font-size='44' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>VC</text></svg>">
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:linear-gradient(135deg,#020617,#1e1b4b,#0f172a);color:white;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 60px}
+nav a{color:#cbd5e1;margin-left:20px;text-decoration:none;font-size:14px;transition:.3s}
+nav a:hover{color:#818cf8}
+section{padding:80px 60px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h2{font-size:48px;font-weight:800;margin-bottom:20px}
+.hero p{color:#cbd5e1;margin-bottom:30px;font-size:18px}
+.highlight{color:#818cf8;font-weight:600}
+.btn{display:inline-block;padding:12px 28px;background:#6366f1;color:white;border-radius:14px;border:none;font-weight:600;cursor:pointer;transition:.3s;text-decoration:none}
+.btn:hover{background:#4f46e5}
+.hero img{width:320px;height:420px;object-fit:cover;border-radius:20px;border:1px solid #312e81;box-shadow:0 20px 40px rgba(0,0,0,.5)}
+.section-title{font-size:34px;font-weight:700;margin-bottom:30px}
+.about{background:rgba(15,23,42,.6);border-radius:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;margin-top:40px}
+.card{background:#1e293b;padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.4);transition:.3s}
+.card:hover{transform:translateY(-6px)}
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #020617, #1e1b4b, #0f172a);
-      color: white;
-      line-height: 1.6;
-    }
+/* Timeline */
+.timeline{border-left:2px solid #6366f1;margin-top:30px;padding-left:30px}
+.timeline-item{margin-bottom:30px}
+.timeline-item h4{color:#818cf8;margin-bottom:5px}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 60px;
-    }
+/* Achievement grid */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px;margin-top:40px}
+.stat{background:#1e293b;padding:30px;border-radius:20px;text-align:center}
+.stat h3{font-size:36px;color:#818cf8}
 
-    nav a {
-      color: #cbd5e1;
-      margin-left: 20px;
-      text-decoration: none;
-      font-size: 14px;
-      transition: 0.3s;
-    }
+/* Testimonials */
+.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:40px}
+.testimonial{background:#1e293b;padding:30px;border-radius:20px;font-style:italic}
 
-    nav a:hover { color: #818cf8; }
+footer{text-align:center;padding:30px;border-top:1px solid #1e293b;color:#64748b;font-size:14px}
 
-    section { padding: 80px 60px; }
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);align-items:center;justify-content:center;z-index:1000}
+.modal-content{background:#0f172a;padding:40px;border-radius:20px;width:90%;max-width:500px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.6)}
+.modal a{color:#818cf8;text-decoration:none}
 
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .hero h2 {
-      font-size: 48px;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      color: #cbd5e1;
-      margin-bottom: 30px;
-      font-size: 18px;
-    }
-
-    .highlight {
-      color: #818cf8;
-      font-weight: 600;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 28px;
-      background: #6366f1;
-      color: white;
-      border-radius: 14px;
-      border: none;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s ease;
-    }
-
-    .btn:hover { background: #4f46e5; }
-
-    .hero img {
-      width: 320px;
-      height: 420px;
-      object-fit: cover;
-      border-radius: 20px;
-      border: 1px solid #312e81;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-    }
-
-    .about {
-      background: rgba(15, 23, 42, 0.6);
-      border-radius: 20px;
-    }
-
-    .section-title {
-      font-size: 32px;
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      transition: 0.3s;
-    }
-
-    .card:hover { transform: translateY(-5px); }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      border-top: 1px solid #1e293b;
-      color: #64748b;
-      font-size: 14px;
-    }
-
-    .modal {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.7);
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-    }
-
-    .modal-content {
-      background: #0f172a;
-      padding: 40px;
-      border-radius: 20px;
-      width: 90%;
-      max-width: 500px;
-      text-align: center;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-    }
-
-    .modal a {
-      color: #818cf8;
-      text-decoration: none;
-    }
-
-    @media(max-width: 900px) {
-      .hero { grid-template-columns: 1fr; text-align: center; }
-      header { padding: 20px; }
-      section { padding: 60px 20px; }
-    }
-  </style>
+@media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center}header{padding:20px}section{padding:60px 20px}}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Vineet Chopra</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#expertise">Expertise</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<h1>Vineet Chopra</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#expertise">Expertise</a>
+<a href="#timeline">Career</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <section class="hero">
-  <div>
-    <h2>20+ Years of Leadership.<br>Scrum Master & Operations Strategist.</h2>
-    <p>
-      Experienced <span class="highlight">Scrum Master and Operations Leader</span> with over two decades of experience managing
-      large-scale teams (300+ members), driving agile transformations, improving SLA performance,
-      and delivering operational excellence across BPO and IT environments.
-    </p>
-    <button class="btn" onclick="openModal()">Contact Me</button>
-  </div>
-  <div style="text-align:center;">
-    <img src="vineetagile.png" alt="Vineet Chopra">
-  </div>
+<div>
+<h2>20+ Years Leadership.<br>Scrum Master.<br>Agile Transformation Leader.</h2>
+<p>
+Experienced <span class="highlight">Agile Leader and Operations Strategist</span> delivering large-scale
+team leadership, enterprise process transformation and operational excellence across
+telecom, BPO and technology organisations.
+</p>
+
+<a class="btn" href="Vineet_Chopra_Resume.pdf" download>Download Resume</a>
+<button class="btn" onclick="openModal()">Contact Me</button>
+<a class="btn" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+</div>
+
+<div style="text-align:center">
+<img src="vineetagile.png" alt="Vineet Chopra">
+</div>
 </section>
 
 <section id="about" class="about">
-  <h3 class="section-title">Professional Summary</h3>
-  <p style="max-width:900px; color:#cbd5e1;">
-    With <strong>20+ years of experience</strong> spanning Agile Project Management, Operations Leadership, and
-    Large-Scale Team Management, I have led cross-functional teams across telecom, BPO, and
-    document management services. Currently serving as a Scrum Master and Founder since 2015,
-    I guide multiple agile teams, mentor emerging Scrum Masters, and champion continuous
-    improvement cultures. My leadership style combines data-driven decision-making,
-    strategic planning, stakeholder collaboration, and process optimization to ensure
-    consistent delivery of measurable business outcomes.
-  </p>
+<h3 class="section-title">Professional Summary</h3>
+<p style="max-width:900px;color:#cbd5e1">
+Senior Scrum Master and Operations Leader with over <strong>20 years of professional experience</strong>
+leading high‑performance teams and managing enterprise operations. Proven success in
+Agile transformation, SLA delivery, stakeholder management, and process optimisation.
+Known for mentoring Scrum Masters, building collaborative cultures, and driving
+continuous improvement using data‑driven decision making.
+</p>
 </section>
 
 <section id="expertise">
-  <h3 class="section-title">Core Expertise & Experience</h3>
-  <div class="cards">
-
-    <div class="card">
-      <h4>Agile & Scrum Leadership (10+ Years)</h4>
-      <p>
-        Facilitating Scrum ceremonies, mentoring Scrum Masters, driving agile adoption,
-        tracking velocity & burn-down metrics, enabling rapid feedback loops, and
-        leading organizational agile transformation.
-      </p>
-    </div>
-
-    <div class="card">
-      <h4>Large-Scale Team & Operations Management</h4>
-      <p>
-        Managed teams of 300+ members including Managers, TLs, QA, Trainers & MIS.
-        Delivered 75,000+ daily calls within SLA, conducted manpower forecasting,
-        budgeting, hiring, performance reviews, and client escalations.
-      </p>
-    </div>
-
-    <div class="card">
-      <h4>Client & Stakeholder Management</h4>
-      <p>
-        Led Monthly & Quarterly Business Reviews, maintained CRM relationships,
-        ensured ISO compliance, handled escalations, and strengthened
-        long-term client partnerships.
-      </p>
-    </div>
-
-    <div class="card">
-      <h4>Process Optimization & Data-Driven Decision Making</h4>
-      <p>
-        Improved productivity through analytics, call forecasting, SLA monitoring,
-        process re-engineering, and continuous improvement frameworks.
-      </p>
-    </div>
-
-  </div>
+<h3 class="section-title">Core Expertise</h3>
+<div class="cards">
+<div class="card"><h4>Agile & Scrum Leadership</h4><p>Driving agile adoption, mentoring Scrum Masters, facilitating ceremonies and improving delivery velocity.</p></div>
+<div class="card"><h4>Large Scale Team Leadership</h4><p>Managed operations of 300+ employees including managers, TLs, QA teams, trainers and analysts.</p></div>
+<div class="card"><h4>Operations Strategy</h4><p>Delivered operational excellence with 75,000+ daily calls handled within SLA across telecom support processes.</p></div>
+<div class="card"><h4>Client & Stakeholder Management</h4><p>Led quarterly reviews, escalations and strategic engagements with enterprise telecom clients.</p></div>
+</div>
 </section>
 
-<section id="contact" style="text-align:center;">
-  <h3 class="section-title">Let’s Connect</h3>
-  <p style="margin-bottom:20px; color:#cbd5e1;">
-    Open to leadership roles, agile coaching opportunities, and operational transformation engagements.
-  </p>
-  <button class="btn" onclick="openModal()">Contact Me</button>
+<section id="timeline">
+<h3 class="section-title">Career Leadership Journey</h3>
+<div class="timeline">
+
+<div class="timeline-item">
+<h4>2015 – Present | Scrum Master</h4>
+<p>
+Leading Agile delivery across cross‑functional technology teams. Facilitating Scrum ceremonies,
+coaching teams on Agile best practices, mentoring new Scrum Masters, and driving continuous
+improvement using delivery metrics such as velocity, cycle time, and burn‑down analysis.
+Focused on building high‑performing teams and improving delivery predictability.
+</p>
+</div>
+
+<div class="timeline-item">
+<h4>2014 – 2015 | Operations Manager</h4>
+<p>
+Led telecom tele‑verification operations for Bihar & UP circles. Managed a large organisation
+structure including <strong>380+ employees</strong>, assistant managers, team leaders, quality teams,
+and trainers. Ensured SLA compliance while handling over <strong>75,000 calls per day</strong>,
+client escalations, workforce forecasting, and operational performance management.
+</p>
+</div>
+
+<div class="timeline-item">
+<h4>2013 – 2014 | Senior Manager – Operations</h4>
+<p>
+Oversaw statewide document management services across Punjab. Managed distributed
+teams across multiple zones and spoke locations while ensuring TAT delivery, operational
+productivity, client reporting, and process optimisation for large‑scale field operations.
+</p>
+</div>
+
+<div class="timeline-item">
+<h4>2005 – 2013 | Assistant Manager – BPO Operations</h4>
+<p>
+Managed telecom support operations including inbound dealer helplines, tele‑verification,
+welcome calls, VAS calling, and e‑billing support. Led teams of more than <strong>180+ agents</strong>
+with supervisors, MIS coordinators and quality teams while ensuring operational efficiency
+and high customer satisfaction.
+</p>
+</div>
+
+<div class="timeline-item">
+<h4>2000 – 2005 | Team Leader</h4>
+<p>
+Started career managing corporate telecom clients and messaging services.
+Promoted to Team Leader responsible for operations monitoring, ACD reporting,
+client service delivery, and improving customer complaint resolution across
+regional telecom operations.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="achievements">
+<h3 class="section-title">Key Achievements</h3>
+<div class="stats">
+<div class="stat"><h3>20+</h3><p>Years Experience</p></div>
+<div class="stat"><h3>380+</h3><p>Largest Team Managed</p></div>
+<div class="stat"><h3>75K+</h3><p>Daily Calls Managed</p></div>
+<div class="stat"><h3>10+</h3><p>Years Agile Leadership</p></div>
+</div>
+</section>
+
+<section>
+<h3 class="section-title">Testimonials</h3>
+<div class="testimonials">
+<div class="testimonial">"Vineet consistently demonstrates exceptional leadership and operational excellence."</div>
+<div class="testimonial">"An outstanding Scrum Master who drives collaboration and continuous improvement."</div>
+<div class="testimonial">"His ability to manage large teams and complex processes is truly remarkable."</div>
+</div>
+</section>
+
+<section id="contact" style="text-align:center">
+<h3 class="section-title">Let's Connect</h3>
+<p style="margin-bottom:20px;color:#cbd5e1">Open to leadership roles, agile coaching, and operational transformation initiatives.</p>
+<button class="btn" onclick="openModal()">Contact Me</button>
 </section>
 
 <div id="contactModal" class="modal" onclick="closeModal()">
-  <div class="modal-content" onclick="event.stopPropagation()">
-    <h3 style="margin-bottom:20px;">Contact Details</h3>
-    <p><strong>Name:</strong> Vineet Chopra</p>
-    <p><strong>Email:</strong> <a href="mailto:vineetchopra27@gmail.com">vineetchopra27@gmail.com</a></p>
-    <p><strong>Contact:</strong> <a href="tel:+919888021409">+91-9888021409</a></p>
-    <br>
-    <button class="btn" onclick="closeModal()">Close</button>
-  </div>
+<div class="modal-content" onclick="event.stopPropagation()">
+<h3 style="margin-bottom:20px">Contact Details</h3>
+<p><strong>Name:</strong> Vineet Chopra</p>
+<p><strong>Email:</strong> <a href="mailto:vineetchopra27@gmail.com">vineetchopra27@gmail.com</a></p>
+<p><strong>Phone:</strong> <a href="tel:+919888021409">+91‑9888021409</a></p>
+<br>
+<button class="btn" onclick="closeModal()">Close</button>
+</div>
 </div>
 
 <footer>
-  © 2026 Vineet Chopra | Agile Leadership & Agile Transformation
+© 2026 Vineet Chopra | Agile Leadership & Transformation
 </footer>
 
 <script>
-  function openModal() {
-    document.getElementById("contactModal").style.display = "flex";
-  }
-
-  function closeModal() {
-    document.getElementById("contactModal").style.display = "none";
-  }
+function openModal(){document.getElementById("contactModal").style.display="flex"}
+function closeModal(){document.getElementById("contactModal").style.display="none"}
 </script>
 
 </body>
